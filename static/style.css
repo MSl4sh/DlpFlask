@@ -1,0 +1,124 @@
+@import url(https://db.onlinewebfonts.com/c/130a63bec7d0efc605bbe6253a27de98?family=InspireTWDC);
+
+* {
+    font-family: "InspireTWDC";
+    color:rgb(52, 40, 64)
+}
+
+.herobanner {
+    height: 75vh;
+}
+
+.absolute-title{
+    top:100px
+}
+
+.herobanner>img {
+    object-fit: cover;
+    mask: url('./img/herobanner.svg');
+    -webkit-mask: url('./img/herobanner.svg');
+    /* pour compatibilité Safari */
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: bottom;
+
+}
+
+.herobanner2{
+    height:70vh;
+}
+
+.herobanner2>.card{
+    bottom:100px;
+}
+
+.herobanner2>img {
+    object-fit: cover;
+    mask: url('./img/herobanner.svg');
+    -webkit-mask: url('./img/herobanner.svg');
+    /* pour compatibilité Safari */
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: bottom;
+    filter:brightness(75%)
+}
+
+.blue-line{
+    width:25%;
+    height:5px;
+    background-color: rgb(52, 52, 233);
+    border-radius: 20%;
+}
+
+.icon_about {
+    width:228px;
+    height:128.25;
+}
+
+.backgrounded-sec {
+    background: #b7d9eb;
+    background: linear-gradient(90deg, rgba(183, 217, 235, 1) 0%, rgba(255, 255, 255, 1) 51%, rgba(251, 217, 255, 1) 100%);
+}
+
+ul>.hover-bg:hover{
+    background-color: rgb(221, 221, 221);
+    border-radius: 20px;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+}
+
+ul>.hover-bg::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 5px;
+    width: 0%;
+    background-color: rgb(52, 52, 233);
+    transform: translateX(-50%);
+    border-radius:20%
+
+}
+
+ul>.hover-bg:hover::after{
+  width:25%
+
+
+}
+
+.card-img{
+    object-fit: cover;
+    mask: url('./img/herobanner.svg');
+    -webkit-mask: url('./img/herobanner.svg');
+    /* pour compatibilité Safari */
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: bottom;
+}
+
+.bg-lightgray{
+    background:#f4f4f4;
+}
+
+.card-container{
+    overflow-x:scroll;
+    object-fit: cover;
+    mask: url('./img/mask2.svg');
+    -webkit-mask: url('./img/mask2.svg');
+    /* pour compatibilité Safari */
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    padding-left:150px;
+    padding-right:150px;
+    scroll-behavior:smooth;
+
+
+}
+
+.w-50{
+    width:50%;
+}
+.hotel-card{
+    min-width:300px;
+}

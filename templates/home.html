@@ -1,0 +1,169 @@
+{%extends 'base.html'%}
+
+{%block content%}
+ <section class="herobanner d-flex position-relative justify-center  mb-5">
+    <img class="w-100" src="{{url_for('static', filename='/img/herobanner.jpg')}}" alt="Logo DisneyLand">
+    <div class="card position-absolute bottom-0 start-50 translate-middle-x shadow-lg">
+      <nav class="d-flex">
+        <ul class="navbar-nav d-flex flex-row gap-3 p-2">
+          <li class="nav-item d-flex flex-column p-4 align-items-center fw-semibold hover-bg">
+            <img src="{{url_for('static', filename='/img/icon mickey.svg')}}" alt="Logo DisneyLand">
+            Attractions, spectacles, restaurants
+          </li>
+          <li class="nav-item d-flex flex-column p-4 align-items-center fw-semibold hover-bg">
+            <img src="{{url_for('static', filename='/img/icon magic.svg')}}" alt="Logo DisneyLand">
+            Restaurants, hôtels, activités
+          </li>
+          <li class="nav-item d-flex flex-column p-4 align-items-center fw-semibold hover-bg">
+            <img src="{{url_for('static', filename='/img/icon reservation.svg')}}" alt="Logo DisneyLand">
+            Réserver un séjour
+          </li>
+
+        </ul>
+      </nav>
+
+
+    </div>
+  </section>
+  <section class="d-flex flex-column align-items-center mt-5 mb-4">
+    <div class="text-center w-50">
+      <h2 class="fw-bold mb-5">Un autre monde vous attend</h2>
+
+      <p>Plongez dans la magie de Disneyland Paris, avec des attractions pour tous les âges, des spectacles incroyables,
+        des rencontres inoubliables et plus encore.
+      </p>
+      <p>
+        Consultez les prix de nos séjours dans le calendriers des prix et bénéficiez de nos conditions flexibles.
+      </p>
+    </div>
+    <button
+      class="btn btn-outline-primary rounded-pill d-flex align-items-center gap-2 mt-2 fw-semibold border-2">Vérifier
+      les
+      disponibilités</button>
+  </section>
+
+  <section class="container-fluid mt-5 backgrounded-sec h-100 d-flex  justify-content-center p-4">
+    <div class="d-flex gap-4  mt-5 w-50">
+      <div class="d-flex flex-column  align-items-center fw-semibold text-center w-50">
+        <img class="icon_about" src="{{url_for('static', filename='/img/iconboat.webp')}}" alt="Logo DisneyLand">
+        Vivez des aventures exaltantes à bord de nos attractions
+      </div>
+      <div class="d-flex flex-column  align-items-center fw-semibold text-center w-50">
+        <img class="icon_about" src="{{url_for('static', filename='/img/iconmusic.webp')}}" alt="Logo DisneyLand">
+        Admirez la magie faire son effet grâce à nos spectacles et parades
+      </div>
+      <div class="d-flex flex-column  align-items-center fw-semibold text-center w-50">
+        <img class="icon_about" src="{{url_for('static', filename='/img/iconfamily.webp')}}" alt="Logo DisneyLand">
+        Profitez de moments hors du temps en compagnie des Personnages
+      </div>
+      <div class="d-flex flex-column  align-items-center fw-semibold text-center w-50">
+        <img class="icon_about" src="{{url_for('static', filename='/img/iconmickey.webp')}}" alt="Logo DisneyLand">
+        Séjournez au beau milieu d’un rêve dans nos Hôtels à thème
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid  backgrounded-sec h-100 d-flex  justify-content-center p-4">
+    <div class=" card d-flex justify-content-center p-3 mt-5">
+      <iframe class="rounded-2" width="624" height="351" src="https://www.youtube.com/embed/ZD0kmPyc9MI?si=IbUBt9NBYyDCm347"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+  </section>
+
+  <section class="container-fluid  backgrounded-sec h-100 d-flex flex-column  align-items-center p-4">
+    <h2 class="fw-bold">Ne manquez pas ces nouvelles expériences magiques !</h2>
+    <div class=" d-flex justify-content-center p-3 mt-5 gap-5">
+      <div class="card shadow-sm w-25 d-flex flex-column justify-content-between">
+        <div>
+          <img class=" h-100 card-img" src="{{url_for('static', filename='/img/tales of magic.jpg')}}" alt="">
+        </div>
+        <div class="p-4">
+          <h4 class="fw-bold mb-4">Disney Tales of Magic</h4>
+          <p>À partir du 10 janvier 2025 , petits et grands rêveurs, préparez-vous à vivre un moment hors du temps au
+            cœur d’une multitude d’effets technologiques captivants qui donneront vie à un merveilleux spectacle
+            immersif encore jamais vu !​</p>
+        </div>
+        <div class="d-flex justify-content-center p-4">
+          <button
+            class="btn btn-outline-primary rounded-pill d-flex align-items-center gap-2 mt-2 fw-semibold border-2">En
+            savoir plus</button>
+        </div>
+      </div>
+      <div class="card shadow-sm w-25 d-flex flex-column justify-content-between">
+        <div>
+          <img class="h-100 card-img" src="{{url_for('static', filename='/img/mickey et le magicien.jpg')}}" alt="">
+        </div>
+        <div class="p-4">
+          <h4 class="fw-bold mb-4">Mickey et le Magicien</h4>
+          <p>Profitez d'un spectacle musical d’illusions époustouflant et préparez-vous à vivre un moment d’éblouissement dépassant l’imaginaire. Les places sont limitées, garantissez votre accès en réservant dès aujourd’hui !​</p>
+        </div>
+        <div class="d-flex justify-content-center p-4">
+          <button
+            class="btn btn-outline-primary rounded-pill d-flex align-items-center gap-2 mt-2 fw-semibold border-2">En
+            savoir plus</button>
+        </div>
+      </div>
+      <div class="card shadow-sm w-25 d-flex flex-column justify-content-between">
+        <div>
+          <img class="h-100 card-img" src="{{url_for('static', filename='/img/roi lion.jpg')}}" alt="">
+        </div>
+        <div class="p-4">
+          <h4 class="fw-bold mb-4">Le Roi Lion et les Rythmes de la Terre</h4>
+          <p>Vibrez au rythme des mélodies de la savane ! Le spectacle est accessible librement avec votre billet pour le Parc Disneyland, mais les places sont limitées. Garantissez votre accès en réservant dès aujourd’hui… sans aucun souci !​</p>
+        </div>
+        <div class="d-flex justify-content-center p-4">
+          <button
+            class="btn btn-outline-primary rounded-pill d-flex align-items-center gap-2 mt-2 fw-semibold border-2">En
+            savoir plus</button>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="container-fluid  backgrounded-sec h-100 d-flex flex-column  align-items-center p-4">
+  <h1 class="mt-4 mb-4 fw-bold">Nos saisons</h1>
+  <div class=" d-flex justify-content-center p-3 mt-5 gap-5">
+    <div class="card border-0 bg-transparent w-25 d-flex flex-column justify-content-between">
+        <div>
+          <img class="w-100 rounded-4" src="{{url_for('static', filename='/img/musicfestival.jpg')}}" alt="">
+        </div>
+        <div class="p-4">
+          <h4 class="fw-bold mb-4">Disney Music Festival</h4>
+          <p>Du 19 avril au 7 septembre 2025, venez célébrer les bandes originales Disney - des grands classiques d’hier aux hits d'aujourd'hui - avec des concerts live et des spectacles mettant en vedette des Personnages Disney et Pixar dans le Parc Disneyland.</p>
+        </div>
+        <div class="d-flex justify-content-center p-4">
+          <button
+            class="btn btn-outline-primary rounded-pill d-flex align-items-center gap-2 mt-2 fw-semibold border-2">Découvrir</button>
+        </div>
+      </div>
+    <div class="card border-0 bg-transparent w-25 d-flex flex-column justify-content-between">
+        <div>
+          <img class="w-100 rounded-4" src="{{url_for('static', filename='/img/halloween festival.jpg')}}" alt="">
+        </div>
+        <div class="p-4">
+          <h4 class="fw-bold mb-4">Festival Halloween Disney</h4>
+          <p>Du 1ᵉʳ octobre au 2 novembre 2025​, les Méchants Disney, Mickey et ses amis vous concoctent un programme malicieux. (Re)découvrez la saison la plus terriblement fun de l'année !</p>
+        </div>
+        <div class="d-flex justify-content-center p-4">
+          <button
+            class="btn btn-outline-primary rounded-pill d-flex align-items-center gap-2 mt-2 fw-semibold border-2">Découvrir</button>
+        </div>
+      </div>
+    <div class="card border-0 bg-transparent w-25 d-flex flex-column justify-content-between">
+        <div>
+          <img class="w-100 rounded-4" src="{{url_for('static', filename='/img/christmasFestival.jpg')}}" alt="">
+        </div>
+        <div class="p-4">
+          <h4 class="fw-bold mb-4">Le Noël Enchanté Disney</h4>
+          <p>Du 8 novembre 2025 au 6 janvier 2026​, le Parc Disneyland se transforme en l’ultime royaume de la magie de Noël. Découvrez un aperçu de la saison la plus magique de l'année !</p>
+        </div>
+        <div class="d-flex justify-content-center p-4">
+          <button
+            class="btn btn-outline-primary rounded-pill d-flex align-items-center gap-2 mt-2 fw-semibold border-2">Découvrir</button>
+        </div>
+      </div>
+  </div>
+</section>
+{% endblock %}
