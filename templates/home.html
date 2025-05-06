@@ -1,30 +1,30 @@
 {%extends 'base.html'%}
 
 {%block content%}
- <section class="herobanner d-flex position-relative justify-center  mb-5">
-    <img class="w-100" src="{{url_for('static', filename='/img/herobanner.jpg')}}" alt="Logo DisneyLand">
-    <div class="card position-absolute bottom-0 start-50 translate-middle-x shadow-lg">
-      <nav class="d-flex">
-        <ul class="navbar-nav d-flex flex-row gap-3 p-2">
-          <li class="nav-item d-flex flex-column p-4 align-items-center fw-semibold hover-bg">
-            <img src="{{url_for('static', filename='/img/icon mickey.svg')}}" alt="Logo DisneyLand">
-            Attractions, spectacles, restaurants
-          </li>
-          <li class="nav-item d-flex flex-column p-4 align-items-center fw-semibold hover-bg">
-            <img src="{{url_for('static', filename='/img/icon magic.svg')}}" alt="Logo DisneyLand">
-            Restaurants, hôtels, activités
-          </li>
-          <li class="nav-item d-flex flex-column p-4 align-items-center fw-semibold hover-bg">
-            <img src="{{url_for('static', filename='/img/icon reservation.svg')}}" alt="Logo DisneyLand">
-            Réserver un séjour
-          </li>
-
-        </ul>
-      </nav>
-
-
-    </div>
-  </section>
+ <section class="herobanner d-flex position-relative justify-center  mb-4">
+  <img class="w-100 h-75" src="{{url_for('static', filename='/img/herobanner.jpg')}}" alt="Logo DisneyLand">
+   <div class="card position-absolute bottom-0 start-50 translate-middle-x shadow-lg hero-nav">
+     <nav class="d-flex">
+       <ul class="navbar-nav d-flex flex-row gap-3 p-2">
+         <li class="nav-item d-flex flex-column p-4 align-items-center fw-semibold hover-bg">
+           <img src="{{url_for('static', filename='/img/icon mickey.svg')}}" alt="Logo DisneyLand">
+           Attractions, spectacles, restaurants
+         </li>
+         <li class="nav-item d-flex flex-column p-4 align-items-center fw-semibold hover-bg">
+           <img src="{{url_for('static', filename='/img/icon magic.svg')}}" alt="Logo DisneyLand">
+           Restaurants, hôtels, activités
+         </li>
+         <li class="nav-item d-flex flex-column p-4 align-items-center fw-semibold hover-bg">
+           <img src="{{url_for('static', filename='/img/icon reservation.svg')}}" alt="Logo DisneyLand">
+           Réserver un séjour
+         </li>
+   
+       </ul>
+     </nav>
+   
+   
+   </div>
+</section>
   <section class="d-flex flex-column align-items-center mt-5 mb-4">
     <div class="text-center w-50">
       <h2 class="fw-bold mb-5">Un autre monde vous attend</h2>

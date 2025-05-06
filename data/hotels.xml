@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hotels>
+    <hotel>
+        <id>1</id>
+        <nom>Disneyland Hotel</nom>
+        <description>Célébrez la magie des histoires royales Disney... et écrivez la vôtre !</description>
+        <etoiles>5</etoiles>
+        <image_url>/static/img/dlhminia.webp</image_url>
+        <localisation>Á l'entrée du parc DisneyLand</localisation>
+    </hotel>
+    <hotel>
+        <id>2</id>
+        <nom>Disney Hotel New York - The Art of Marvel</nom>
+        <description>Vivez comme un Super Héros dans ce décor typiquement new-yorkais.</description>
+        <etoiles>4</etoiles>
+        <image_url>/static/img/newyorkminia.webp</image_url>
+        <localisation>10 min. à pieds</localisation>
+    </hotel>
+    <hotel>
+        <id>3</id>
+        <nom>Disney Newport Bay Club</nom>
+        <description>Réveillez-vous dans une ambiance maritime, décorée de clins d'œil aux aventures nautiques de Mickey.</description>
+        <etoiles>4</etoiles>
+        <image_url>/static/img/newportminia.webp</image_url>
+        <localisation>15 min. à pieds</localisation>
+    </hotel>
+    <hotel>
+        <id>4</id>
+        <nom>Disney Sequoia Lodge</nom>
+        <description>Relaxez-vous dans ce lodge boisé, agrémenté de subtiles références à Bambi.</description>
+        <etoiles>3</etoiles>
+        <image_url>/static/img/sequoiaminia.webp</image_url>
+        <localisation>15 min. à pieds</localisation>
+    </hotel>
+    <hotel>
+        <id>5</id>
+        <nom>Disney Hotel Cheyenne</nom>
+        <description>Décompressez avec Woody et Jessie dans l'ambiance animée de cet hôtel à thème Far West.</description>
+        <etoiles>3</etoiles>
+        <image_url>/static/img/cheyeneminia.webp</image_url>
+        <localisation>20 min. à pieds</localisation>
+    </hotel>
+    <hotel>
+        <id>6</id>
+        <nom>Disney Hotel Santa Fe</nom>
+        <description>Faites un arrêt au stand dans cet hôtel aux couleurs du film Disney/Pixar Cars.</description>
+        <etoiles>2</etoiles>
+        <image_url>/static/img/santafeminia.webp</image_url>
+        <localisation>20 min. à pieds</localisation>
+    </hotel>
+</hotels> 

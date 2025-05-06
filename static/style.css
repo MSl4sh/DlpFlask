@@ -13,24 +13,25 @@
     top:100px
 }
 
-.herobanner>img {
+.herobanner {
+   
+    height: fit-content;
+}
+
+.herobanner>img{
     object-fit: cover;
     mask: url('./img/herobanner.svg');
     -webkit-mask: url('./img/herobanner.svg');
-    /* pour compatibilité Safari */
     mask-repeat: no-repeat;
     mask-size: cover;
     mask-position: bottom;
-
 }
 
 .herobanner2{
-    height:70vh;
+    height:fit-content;
 }
 
-.herobanner2>.card{
-    bottom:100px;
-}
+
 
 .herobanner2>img {
     object-fit: cover;
