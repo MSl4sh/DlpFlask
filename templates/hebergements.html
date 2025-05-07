@@ -4,15 +4,17 @@
 <section class="herobanner2 position-relative d-flex justify-center pb-5 bg-lightgray">
   <h1 class="absolute-title fw-bold text-white position-absolute start-50 translate-middle-x mt-5 z-3">Les Hôtels Disney</h1>
   <img class="w-100 h-75" src="{{url_for('static', filename='/img/herobanner2.jpg')}}" alt="Logo DisneyLand">
-  <div class="position-absolute bottom-0 start-50 translate-middle-x z-3 hero-nav-float">
+  <div class="position-absolute bottom-0 start-50 translate-middle-x z-2 hero-nav-float">
     <div class="card shadow-lg hero-nav">
       <nav class="d-flex">
         <ul class="navbar-nav d-flex flex-row gap-3 p-2">
+
           <li class="nav-item d-flex flex-column p-4 align-items-center fw-semibold hover-bg">
             <img src="{{url_for('static', filename='/img/iconPersonHotel.svg')}}" alt="Logo DisneyLand">
             Hôtels Disney
           </li>
-          <li class="nav-item d-flex flex-column p-4 align-items-center fw-semibold hover-bg">
+
+          <li class="nav-item d-flex flex-column p-4 align-items-center fw-semibold hover-bg" onclick="navigate('/food')">
             <img src="{{url_for('static', filename='/img/icon magic.svg')}}" alt="Logo DisneyLand">
             Restaurants et plus !
           </li>
@@ -61,6 +63,34 @@
       </div>
     </div>
     {% endfor %}
+  </div>
+</section>
+<section class="d-flex flex-column align-items-center p-5 bg-lightgray">
+  <h3 class="fw-bold mb-3">Trouvez l'hébergement idéal !</h3>
+  <p>Repérez la chambre, le bungalow ou la suite Disney qu'il vous faut : notre gamme répond à tous les goûts et tous les budgets !</p>
+
+  <div class="d-flex w-50 gap-4 mt-5 mb-2">
+    <div class="w-50">
+      <img class="w-100 rounded-3" src="{{url_for('static', filename='/img/hotelroom.jpg')}}" alt="DisneyLand hotel">
+    </div>
+    <div class="w-50 p-2">
+       <h4 class="fw-bold mb-3">Chambres et bungalows</h4>
+      <p>En chambre simple ou double, avec ou sans vue sur le lac Disney, ou même dans un confortable bungalow forestier, quel que soit votre choix, l'expérience Disneyland Paris est au rendez-vous !</p>
+    </div>
+
+  </div>
+  <div class="d-flex w-50 gap-4 mt-5">
+    <div class="w-50 p-2">
+       <h4 class="fw-bold mb-3">Chambres Club et Suites</h4>
+      <p>Rejoignez le club et profitez de chambres premium et de services exclusifs.</p>
+      <p>Choisissez une Suite ou une Chambre Club et bénéficiez d'une réception privée, d'un voiturier, d'un lounge dédié et bien plus !</p>
+      <button class="btn btn-outline-primary rounded-pill d-flex align-items-center gap-2 mt-2 fw-semibold border-2">
+          En savoir plus
+        </button>
+    </div>
+    <div class="w-50">
+      <img class="w-100 rounded-3" src="{{url_for('static', filename='/img/hotelservice.png')}}" alt="DisneyLand hotel">
+    </div>
   </div>
 </section>
 {%endblock%}

@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, url_for,request
 from hotels import Hotel
+from restaurant import Restaurant
 import xml.etree.ElementTree as ET
 
 app = Flask(__name__)
@@ -21,6 +22,21 @@ def load_hotels():
         hotels.append(hotel)
     return hotels
 
+def load_restaurants():
+    tree = ET.parse('data/food.xml')
+    root = tree.getroot()
+    restaurants = []
+    for food_elem in root.findall('restaurant'):
+        restaurant = Restaurant(
+            name=food_elem.find('name').text,
+            type=food_elem.find('type').text,
+            location=food_elem.find('location').text,
+            pricerange=food_elem.find('pricerange').text,
+            image=food_elem.find('image').text
+        )
+        restaurants.append(restaurant)
+    return restaurants
+
 @app.route("/")
 def base():
     return redirect("/home")
@@ -29,8 +45,12 @@ def base():
 def home():
     return render_template("home.html")
 
-@app.route("/hebergement")
+@app.route("/hotels")
 def hebergement():
     hotels = load_hotels()
     return render_template("hebergements.html", hotels=hotels)
 
+@app.route("/food")
+def food():
+    restaurants=load_restaurants()
+    return render_template("food.html",restaurants=restaurants)

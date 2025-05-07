@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<restaurants>
+    <restaurant>
+        <name>Agrabah Café Restaurant</name>
+        <type>Buffet à volonté</type>
+        <location>Parc Disneyland</location>
+        <pricerange>€€</pricerange>
+        <image>/static/img/agrabahcafe.jpg</image>
+    </restaurant>
+    <restaurant>
+        <name>Annette's Diner</name>
+        <type>Service à table</type>
+        <location>Disney Village</location>
+        <pricerange>€€</pricerange>
+        <image>/static/img/annettediner.jpg</image>
+    </restaurant>
+    <restaurant>
+        <name>Au Chalet de la Marionnette</name>
+        <type>Restauration rapide</type>
+        <location>Parc Disneyland</location>
+        <pricerange>€</pricerange>
+        <image>/static/img/chaletmarionette.jpg</image>
+    </restaurant>
+    <restaurant>
+        <name>Auberge de Cendrillon</name>
+        <type>Service à table</type>
+        <location>Parc Disneyland</location>
+        <pricerange>€€€</pricerange>
+        <image>/static/img/aubergecendrillon.jpg</image>
+    </restaurant>
+    <restaurant>
+        <name>Billy Bob's Buffet</name>
+        <type>Buffet à volonté</type>
+        <location>Disney Village</location>
+        <pricerange>€€</pricerange>
+        <image>/static/img/billybob.jpg</image>
+    </restaurant>
+    <restaurant>
+        <name>Bistrot Chez Rémy</name>
+        <type>Service à table</type>
+        <location>Parc Walt Disney Studios</location>
+        <pricerange>€€</pricerange>
+        <image>/static/img/bistrotremy.jpg</image>
+    </restaurant>
+    <restaurant>
+        <name>Brasserie Rosalie</name>
+        <type>Service à table</type>
+        <location>Disney Village</location>
+        <pricerange>€€</pricerange>
+        <image>/static/img/rosalie.jpg</image>
+    </restaurant>
+</restaurants>

@@ -2,7 +2,9 @@
 
 * {
     font-family: "InspireTWDC";
-    color:rgb(52, 40, 64)
+    color:rgb(52, 40, 64);
+    text-decoration:none;
+
 }
 
 .herobanner {
@@ -73,7 +75,7 @@ ul>.hover-bg::after{
     content: '';
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 15px;
     height: 5px;
     width: 0%;
     background-color: rgb(52, 52, 233);
@@ -122,4 +124,12 @@ ul>.hover-bg:hover::after{
 }
 .hotel-card{
     min-width:300px;
+}
+
+.gray-line{
+    content:"";
+    width:30%;
+    height:3px;
+    background: #e3e3e3;
+    border-radius:10px;
 }
