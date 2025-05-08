@@ -6,6 +6,7 @@
         <location>Parc Disneyland</location>
         <pricerange>€€</pricerange>
         <image>/static/img/agrabahcafe.jpg</image>
+        <description></description>
     </restaurant>
     <restaurant>
         <name>Annette's Diner</name>
@@ -13,6 +14,7 @@
         <location>Disney Village</location>
         <pricerange>€€</pricerange>
         <image>/static/img/annettediner.jpg</image>
+        <description></description>
     </restaurant>
     <restaurant>
         <name>Au Chalet de la Marionnette</name>
@@ -20,6 +22,7 @@
         <location>Parc Disneyland</location>
         <pricerange>€</pricerange>
         <image>/static/img/chaletmarionette.jpg</image>
+        <description></description>
     </restaurant>
     <restaurant>
         <name>Auberge de Cendrillon</name>
@@ -27,6 +30,7 @@
         <location>Parc Disneyland</location>
         <pricerange>€€€</pricerange>
         <image>/static/img/aubergecendrillon.jpg</image>
+        <description></description>
     </restaurant>
     <restaurant>
         <name>Billy Bob's Buffet</name>
@@ -41,6 +45,7 @@
         <location>Parc Walt Disney Studios</location>
         <pricerange>€€</pricerange>
         <image>/static/img/bistrotremy.jpg</image>
+        <description></description>
     </restaurant>
     <restaurant>
         <name>Brasserie Rosalie</name>
@@ -48,5 +53,6 @@
         <location>Disney Village</location>
         <pricerange>€€</pricerange>
         <image>/static/img/rosalie.jpg</image>
+        <description></description>
     </restaurant>
 </restaurants>

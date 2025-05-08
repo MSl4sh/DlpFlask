@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formulas>
+    <formula>
+        <icon>/static/img/ticketicon.svg</icon>
+        <color>first-formula</color>
+        <title>Billets Parcs Disney</title>
+        <description>Profitez de 1 ou plusieurs jours</description>
+        <first_feature>1 ou 2 Parcs au choix</first_feature>
+        <second_feature>Annulez jusqu'à 3 jours avant l'arrivée (Billets datés)</second_feature>
+        <third_feature>Billets Parcs Liberté Valables 1 an (Billets non datés)</third_feature>
+        <button>Acheter</button>
+        <link>Découvrir</link>
+    </formula>
+    <formula>
+        <icon>/static/img/bagageicon.svg</icon>
+        <color>second-formula</color>
+        <title>Séjour Hôtel + Billets Parcs</title>
+        <description>Profitez de la magie jusque dans vos rêves</description>
+        <first_feature>Hôtel de qualité à proximité des Parcs Disney</first_feature>
+        <second_feature>Annulez ou modifiez sans frais jusqu'à 7 jours avant l'arrivée</second_feature>
+        <third_feature>Paiement jusqu'à 6 fois sans frais</third_feature>
+        <button>Réserver</button>
+        <link>Découvrir</link>
+    </formula>
+    <formula>
+        <icon>/static/img/passicon.svg</icon>
+        <color>third-formula</color>
+        <title>Disneyland Pass</title>
+        <description>Votre Pass pour une année magique !</description>
+        <first_feature>Parking Disney inclus</first_feature>
+        <second_feature>Réduction dans les boutiques et restaurants de Disneyland Paris</second_feature>
+        <third_feature>Paiement jusqu'à 12 fois sans frais</third_feature>
+        <button>Réserver</button>
+        <link>Découvrir</link>
+    </formula>
+</formulas>

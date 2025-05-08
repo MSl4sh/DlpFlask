@@ -48,4 +48,12 @@
         <image_url>/static/img/santafeminia.webp</image_url>
         <localisation>20 min. à pieds</localisation>
     </hotel>
+    <hotel>
+        <id>7</id>
+        <nom>Disney Davy Crockett Ranch</nom>
+        <description>Réfugiez-vous dans un bungalow indépendant, niché au cœur d'une forêt.</description>
+        <etoiles>0</etoiles>
+        <image_url>/static/img/davycrockett.webp</image_url>
+        <localisation>15 min. en voiture</localisation>
+    </hotel>
 </hotels> 

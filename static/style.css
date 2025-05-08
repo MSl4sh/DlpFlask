@@ -1,10 +1,15 @@
 @import url(https://db.onlinewebfonts.com/c/130a63bec7d0efc605bbe6253a27de98?family=InspireTWDC);
 
-* {
+*,html {
     font-family: "InspireTWDC";
     color:rgb(52, 40, 64);
     text-decoration:none;
+    scroll-behavior:smooth !important;
 
+}
+a{
+    text-decoration:none;
+    color: rgb(52, 40, 64)
 }
 
 .herobanner {
@@ -104,20 +109,6 @@ ul>.hover-bg:hover::after{
     background:#f4f4f4;
 }
 
-.card-container{
-    overflow-x:scroll;
-    object-fit: cover;
-    mask: url('./img/mask2.svg');
-    -webkit-mask: url('./img/mask2.svg');
-    /* pour compatibilité Safari */
-    mask-repeat: no-repeat;
-    mask-size: cover;
-    padding-left:150px;
-    padding-right:150px;
-    scroll-behavior:smooth;
-
-
-}
 
 .w-50{
     width:50%;
@@ -132,4 +123,87 @@ ul>.hover-bg:hover::after{
     height:3px;
     background: #e3e3e3;
     border-radius:10px;
+}
+
+.carousel-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      overflow: hidden;
+}
+.carousel {
+    display: flex;
+    overflow-x: hidden;
+    gap: 1rem;
+    padding: 1rem;
+    object-fit: cover;
+    mask: url('./img/mask2.svg');
+    -webkit-mask: url('./img/mask2.svg');
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    padding-left:150px;
+    padding-right:150px;
+    scroll-behavior:smooth;
+}
+
+.scroll-btn {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:0.5rem 1rem;
+    border: 2px solid rgb(52, 40, 64);
+    color:rgb(52, 40, 64);
+    border-radius:50px;
+    cursor: pointer;
+    z-index: 1;
+    background:none;
+}
+
+.scroll-btn:disabled {
+  opacity: 0.1;
+  cursor: default;
+}
+
+.reservation-img{
+    background: linear-gradient(rgb(228, 230, 249), rgb(245, 218, 219));
+}
+
+.first-formula{
+    background:linear-gradient(0deg, rgb(38, 109, 240) 0%, rgb(85, 192, 233) 99.76%);
+}
+
+.second-formula{
+    background:linear-gradient(0deg, rgb(26, 17, 82) 0%, rgb(65, 52, 147) 99.76%);
+}
+
+.third-formula{
+    background:linear-gradient(0deg, rgb(164, 63, 115) 0%, rgb(209, 16, 59) 99.76%);
+}
+
+.formula-card{
+    min-width:350px
+}
+
+.formula-desc{
+    background: rgb(228, 230, 249);
+    color: #6e2a6e
+
+}
+
+.features {
+    list-style-image: url("./img/checklist.svg")
+}
+
+.cursor-pointer{
+    cursor:pointer;
+}
+.star-sperator{
+    width:100%;
+    heigh:50px;
+    background-image:url("./img/star-separator.webp")
+}
+
+.w-10{
+    width:10%;
 }

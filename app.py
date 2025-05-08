@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect, url_for,request
 from hotels import Hotel
 from restaurant import Restaurant
+from formulas import Formula
 import xml.etree.ElementTree as ET
 
 app = Flask(__name__)
@@ -37,6 +38,23 @@ def load_restaurants():
         restaurants.append(restaurant)
     return restaurants
 
+def load_formulas():
+    tree = ET.parse('data/formula.xml')
+    root = tree.getroot()
+    formulas = []
+    for formula_elem in root.findall('formula'):
+        formula = Formula(
+            icon=formula_elem.find('icon').text,
+            color=formula_elem.find('color').text,
+            title=formula_elem.find('title').text,
+            description=formula_elem.find('description').text,
+            features=[formula_elem.find('first_feature').text,formula_elem.find('second_feature').text,formula_elem.find('third_feature').text],
+            button=formula_elem.find('button').text,
+            link=formula_elem.find('link').text
+        )
+        formulas.append(formula)
+    return formulas
+
 @app.route("/")
 def base():
     return redirect("/home")
@@ -54,3 +72,8 @@ def hebergement():
 def food():
     restaurants=load_restaurants()
     return render_template("food.html",restaurants=restaurants)
+
+@app.route("/reservation")
+def reservation():
+    formulas=load_formulas()
+    return render_template("reservation.html",formulas=formulas)
